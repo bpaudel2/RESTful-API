@@ -1,0 +1,50 @@
+Simple Object Access Protocol: SOAP
+SOAP uses Extensible Markup Language(XML) to transmit sets of information in the form of object.
+SOAP usually sits on top of HTTP or SMTP(Simple Mail Transfer Protocol).
+REpresentational State Transfer(REST) is the upcoming alternative to SOAP.
+REST is more of styles and guidelines than a protocol. It leverages the features of
+HTTP in order to transfer information.
+
+Message Formatting:
+1. XML 2.JSON(JavaScript Object Notation)
+
+SOAP:
+-Developed by Microsoft in 1998
+-Must use XML for Message Formatting
+-Works with HTTP and other application layer protocol
+
+REST:
+-Dissertation by Roy Thomas Fielding in 2000
+-Uses HTTP Verbs to manage resources
+-can use any type of message Formatting
+-REST Contraints
+
+REST Contraints:
+-Separation of client and Server
+-Stateless(does not retain information)
+-Cacheable
+-Uniform Interface
+-Layered System
+-Code on Deman(optional)
+
+HTTP Requests:
+-contains Message header and body(optional), and a blank line in between
+Header: 
+-reuest line(HTTP Verb URI HTTP VERSION NUMBER, exp GET /home.html HTTP/1.1)
+-optional request headers:name:value pair, 
+Body: Message
+
+HTTP Response:
+-contains Message header and body(optional), and a blank line in between
+Header:
+-status Line: HTTP VERSION STATUS CODE AND REASON PHRASE exp, 200 OK
+-optional response header:Name value pair
+Body:The resources requested
+
+In order to experiment with HTTP Response and Request try either Curl or Postman(Chrome App)
+Curl:
+-In command line type>>curl www.google.com
+
+
+
+
